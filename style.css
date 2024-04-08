@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .chat-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    bottom: 0;
+  }
+  
+  #chat-output {
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: scroll;
+  }
+  
+  #user-input {
+    width: calc(100% - 60px);
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  
+  #send-btn {
+    padding: 5px 10px;
+    margin: 10px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 40px;
+  }
+  
+  .sidenav button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    background-color: #34c1b7;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .content {
+    display: flex;
+    margin-left: 200px;
+    padding: 20px;
+    height: 700px;
+  }
+  
+  .dark-theme {
+    background-color: #333;
+    color: #fff;
+  }
+  .dark-theme .content{
+    background-color: #333;
+  }
+  .dark-theme .sidenav{
+    background-color: #333;
+    border: 2px solid #fff;
+  }
+  .dark-theme button {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .dark-theme #loginSignupBtn {
+    background-color: #08615b;
+  }
+  .dark-theme #themeBtn {
+    background-color: #08615b;
+  }
+ 
