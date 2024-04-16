@@ -6,37 +6,40 @@
   <title>SahAI</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bod">
+<body>
     <div class="sidenav">
         <div class="logo">
           <img src="Chatbot.jpeg" alt="Chatbot">
         </div>
         <button id="loginSignupBtn" onclick="toggleForm()">Login / Sign Up</button>
-        <form id="loginSignupForm" class="hidden">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-          
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-          
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          
-            <input type="submit" value="Submit">
-          </form>
+        
           
         <button id="themeBtn" onclick="toggleTheme()">Light Theme</button>
       </div>
-      <!-- ////////// -->
-      <div class="content">
-         <!-- ////////chat bot UI -->
+      <!-- ////////// center divide-->
+
+      <div class="content"> 
+   <div class="sign">
+    <form id="loginSignupForm"  action="submit.php" method="post"  class="hidden">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    
+      <input type="submit" value="Submit">
+    </form>
+   </div>
+   <!-- ////////chat bot UI -->
   <div class="chat-container">
     <div id="chat-output"></div>
     <input type="text" id="user-input" placeholder="Type a message...">
     <button id="send-btn">Send</button>
   </div>
   <!-- //////Chatbot ends  -->
-
       </div>
    
   <script src="client.js"></script>

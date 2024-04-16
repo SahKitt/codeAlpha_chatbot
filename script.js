@@ -4,10 +4,10 @@ function toggleForm() {
   
     if (form.classList.contains("hidden")) {
       form.classList.remove("hidden");
-      content.style.marginLeft = "400px"; // Adjust margin-left value as needed
+      content.style.marginLeft = "100px"; 
     } else {
       form.classList.add("hidden");
-      content.style.marginLeft = "200px"; // Adjust margin-left value as needed
+      content.style.marginLeft = "100px"; 
     }
   }
   

@@ -1,14 +1,13 @@
 const express = require('express');
 const http = require('http');
-const WebSocket = require('ws'); // Import WebSocket module
+const WebSocket = require('ws'); 
 const axios = require('axios');
 
 const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
-// Replace this line with your actual OpenAI API key
-const OPENAI_API_KEY = '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';
+const OPENAI_API_KEY = '######';
 
 let previousResponse = null;
 

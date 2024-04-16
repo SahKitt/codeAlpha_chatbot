@@ -10,6 +10,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
+    color: #000;
     border-radius: 5px;
     bottom: 0;
   }
@@ -17,6 +18,7 @@ body {
   #chat-output {
     min-height: 200px;
     margin-bottom: 10px;
+    margin-top: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -35,7 +37,7 @@ body {
   }
   .sidenav {
     height: 100%;
-    width: 200px;
+    width:150px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -74,18 +76,26 @@ body {
   }
   
   .content {
-    display: flex;
-    margin-left: 200px;
+    margin-left: 170px;
+    border-radius: 8px;
     padding: 20px;
-    height: 700px;
+    height: 100%;
+    border: 2px solid #333;
   }
-  
+  .sign{
+    
+  }
   .dark-theme {
     background-color: #333;
     color: #fff;
   }
   .dark-theme .content{
     background-color: #333;
+    border: 2px solid #fff;
+  }
+  .dark-theme .chat-container{
+    background-color: #333;
+    color: #fff;
   }
   .dark-theme .sidenav{
     background-color: #333;
@@ -95,7 +105,10 @@ body {
     background-color: #555;
     color: #fff;
   }
-  
+  .dark-theme #user-input{
+    background-color: #333;
+    color: #fff;
+  }
   .dark-theme #loginSignupBtn {
     background-color: #08615b;
   }
